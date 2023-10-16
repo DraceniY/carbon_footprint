@@ -7,6 +7,7 @@ from metrics_calculation import (
     units_conversion,
 )
 from plots import plot_figues
+import pandas as pd
 
 
 def main():
@@ -54,6 +55,14 @@ def main():
         company_data=company_data,
         output_directory=output_directory,
     )
+    with pd.ExcelWriter(output_directory / "data_results.xlsx") as writer:
+        comsumption_data_normalized.to_excel(writer, sheet_name="Comsumption", index=False)
+        company_data.to_excel(writer, sheet_name="Other Data", index=False)
+        emission_electricity_data.to_excel(writer, sheet_name="Other Data", index=False)
+        global_warming_data.to_excel(writer, sheet_name="Other Data", index=False)
+        emission_fuel_data.to_excel(writer, sheet_name="Other Data", index=False)
+
+    comsumption_data_normalized.to_excel("")
 
 
 if __name__ == "__main__":

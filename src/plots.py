@@ -25,7 +25,7 @@ def plot_figues(
         color_discrete_sequence=px.colors.sequential.RdBu,
         hover_data=["Information"],
     )
-    fig_country.update_layout(title="GHG emissions (tonnes CO2eq) per countries")
+    fig_country.update_layout(title="Total GHG emissions (tonnes CO2eq) per countries")
 
     fig_year_energy = px.histogram(
         comsumption_data,
