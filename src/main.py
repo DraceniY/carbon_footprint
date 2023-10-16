@@ -1,5 +1,7 @@
 from pathlib import Path
 
+import pandas as pd
+
 from metrics_calculation import (
     normalized_ghg_emission,
     produce_datas,
@@ -7,7 +9,6 @@ from metrics_calculation import (
     units_conversion,
 )
 from plots import plot_figues
-import pandas as pd
 
 
 def main():
@@ -56,7 +57,9 @@ def main():
         output_directory=output_directory,
     )
     with pd.ExcelWriter(output_directory / "data_results.xlsx") as writer:
-        comsumption_data_normalized.to_excel(writer, sheet_name="Comsumption", index=False)
+        comsumption_data_normalized.to_excel(
+            writer, sheet_name="Comsumption", index=False
+        )
         company_data.to_excel(writer, sheet_name="Other Data", index=False)
         emission_electricity_data.to_excel(writer, sheet_name="Other Data", index=False)
         global_warming_data.to_excel(writer, sheet_name="Other Data", index=False)

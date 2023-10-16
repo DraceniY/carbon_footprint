@@ -18,8 +18,6 @@ def produce_datas(
             emission_electricity_data: emission factors electricity data.
             global_warming_data: global warming data.
     """
-    # current_directory : Path = Path.cwd()
-    # carbon_file : Path = current_directory / "data" / "Carbon footprint exercise.xlsx"
     data: pd.DataFrame = pd.read_excel(
         carbon_file, sheet_name=["Comsumption", "Other Data"]
     )
@@ -92,9 +90,6 @@ def units_conversion(
     """
     # convert all to kWh
     # COMSUMTION DATA
-    # if x == 'Gallons':
-    # 1l = 0,264172 gallons
-    # Gallons - Diesel
     comsumption_data.update(
         (
             comsumption_data[
@@ -127,8 +122,6 @@ def units_conversion(
         )
         * 9.1
     )
-
-    # elif x == 'Liters':
     # kwh_diesel = x * 10
     comsumption_data.update(
         comsumption_data[
@@ -154,15 +147,13 @@ def units_conversion(
         * 9.1
     )
     # EMISION FACTOR FUEL
-    # elif x == 'MMBtu':
     # 1 MMBTU = 293.07107 kWh
     # kwh = x * 293.07107
     emission_fuel_data.update(
         emission_fuel_data[emission_fuel_data["Unit"] == "MMBtu"]["gGHG/Unit"]
         * 0.000293071
     )
-    # elif x == 'MWh':
-    # kwh = x * 1000
+    # 'MWh' to KWh kwh = x * 1000
     comsumption_data.update(
         comsumption_data[
             (comsumption_data["Unit "] == "MWh")
@@ -199,7 +190,6 @@ def total_ghg(
     Returns:
         comsumption_data: comsumtion of companies though years with column of total GHG emissions.
     """
-    # TODO convert to liters depends on energy type
     # Calculation formula: Total GHG emissions (tCO2eq) = Energy consumption * Emission factors * Global Warming Potential (GWP)
     site_to_country: Dict[str, str] = company_data.set_index("Site name")[
         "Country"

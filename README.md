@@ -1,5 +1,4 @@
 # Greenhouse gas emissions
-------------------------------
 Data visualization for Global GHG emissions (tonnes CO2eq) by countries and by year and energy type.
 
 # Usage
