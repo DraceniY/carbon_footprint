@@ -6,4 +6,5 @@ dependencies:
   - pandas=2.0.3=py311h7aedaa7_0
   - plotly=5.9.0=py311hca03da5_0
   - python=3.11.5=hb885b13_0
+  - openpyxl=3.0.10=py311h80987f9_0
 
