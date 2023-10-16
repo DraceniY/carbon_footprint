@@ -40,14 +40,14 @@ The main script will follow this flow :
 6. Save transformations data on results/data_results.xlsx
 ~~~
 
-Calculation formula: 
 # Output
 The output will be display in results folder with two figures GHG emissions based on country and on year/energy type and two html representing the interactive figures.
 ##### Total GHG emissions (tonnes CO2eq) per countries:
 ![GHG per country](results/ghg_country.png)
 ##### Total normalized GHG emissions (tonnes CO2eq) per year and energy type:
 ![GHG per year per energy type](results/ghg_year_energy.png)
-<b>Interpretation :</b> The value tells how many standard deviations is away from the mean. If a value is equal to 0, it is on the mean. A positive value indicates the raw score is higher than the mean average. Negative value represents below the mean average.
+. Interpretation : 
+The value tells how many standard deviations is away from the mean. If a value is equal to 0, it is on the mean. A positive value indicates the raw score is higher than the mean average. Negative value represents below the mean average.
 # Copyright
 Yasmine Draceni - October 2023
 
