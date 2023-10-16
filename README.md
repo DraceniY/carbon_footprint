@@ -13,7 +13,7 @@ cd src/
 python main.py
 ```
 
-# Algorithm flow
+# The flow of the algorithm 
 The main script will follow this flow :
 
 ~~~
