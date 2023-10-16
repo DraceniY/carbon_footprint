@@ -2,6 +2,7 @@
 Data visualization for Global GHG emissions (tonnes CO2eq) by countries and by year and energy type.
 
 # Usage
+Please insure that you have conda and python installed before to run any command lines. Check the installation [here](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) if you don't have conda installed.
 A brief guide of how to use carbon_footprint :
 
 To run locally you need to activate the environment then run the command line as following : 
