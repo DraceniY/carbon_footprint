@@ -52,6 +52,9 @@ The percentage represent total GHG emissions per country.
 ##### Total normalized GHG emissions (tonnes CO2eq) per year and energy type:
 ![GHG per year per energy type](results/ghg_year_energy.png)
 
+Click  <a href="
+https://htmlpreview.github.io/?https://github.com/DraceniY/carbon_footprint/blob/main/results/ghg_year_energy.html" target="_blank">here</a> for interactive figure
+
 <b>Interpretation : </b>
 The value tells how many standard deviations is away from the mean. If a value is equal to 0, it is on the mean. A positive value indicates the raw score is higher than the mean average. Negative value represents below the mean average.
 # Copyright
