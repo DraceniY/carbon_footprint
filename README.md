@@ -44,6 +44,7 @@ The main script will follow this flow :
 The output will be display in results folder with two figures GHG emissions based on country and on year/energy type and two html representing the interactive figures.
 ##### Total GHG emissions (tonnes CO2eq) per countries:
 ![GHG per country](results/ghg_country.png)
+Click  <a href="https://htmlpreview.github.io/?https://github.com/DraceniY/carbon_footprint/blob/main/results/ghg_country.html" target="_blank">here</a> for interactive figure
 
 <b>Interpretation : </b>
 The percentage represent total GHG emissions per country.
